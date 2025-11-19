@@ -56,7 +56,12 @@ indent-style = "space"
 testpaths = ["tests"]
 python_files = ["test_*.py"]
 addopts = "-v --strict-markers"
+pythonpath = ["src"]
 markers = [
     "slow: marks tests as slow",
     "integration: marks tests as integration tests",
+]
+[dependency-groups]
+dev = [
+    "ruff>=0.14.5",
 ]
